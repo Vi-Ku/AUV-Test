@@ -1,0 +1,21 @@
+title Acoustic Modem Communication with AUV
+
+actor BaseStation
+entity Microcontroller_BaseStation
+entity AcousticModem_BaseStation
+entity AcousticModem_AUV
+entity ArduinoMega
+entity Jetson
+
+BaseStation -> Microcontroller_BaseStation: sendRequest(requestType, requestID)
+Microcontroller_BaseStation -> AcousticModem_BaseStation: transmitRequest(requestType, requestID)
+AcousticModem_BaseStation -> AcousticModem_AUV: forwardRequest(requestType, requestID)
+AcousticModem_AUV -> ArduinoMega: relayRequest(requestType, requestID)
+ArduinoMega -> Jetson: processRequest(requestType, requestID)
+Jetson --> ArduinoMega: returnResponse(requestType*requestID, response)
+ArduinoMega --> AcousticModem_AUV: transmitResponse(requestType*requestID, response)
+AcousticModem_AUV --> AcousticModem_BaseStation: forwardResponse(requestType*requestID, response)
+AcousticModem_BaseStation --> Microcontroller_BaseStation: relayResponse(requestType*requestID, response)
+Microcontroller_BaseStation -> BaseStation: returnResponse(requestType*requestID, response)
+BaseStation -> BaseStation: verifyResponse(requestType*requestID, response)
+BaseStation -> BaseStation: processResponse(requestType*requestID, response)
