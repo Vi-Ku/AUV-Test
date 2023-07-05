@@ -3,7 +3,7 @@ import rospy
 import RPi.GPIO as GPIO
 
 # Pin Definitions
-heartbeat_pin = 18  # BOARD pin 40
+heartbeat_pin = 11  # BOARD pin 40, pin number 23 on the jetson
 heartBeatTime = 0.5
 
 def main():
