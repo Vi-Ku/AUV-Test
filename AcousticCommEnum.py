@@ -75,6 +75,16 @@ class RequestId(Enum):
         CURRENT_GOAL_SPEED_Z = 210
         BATTERY_STATE = 220
 
+class FeebackCode(Enum):
+    #! These codes are only used for demonstration puropose for one way communication only, the main codes to be used will be as mentioned above.
+    LATTITUDE = 10
+    LONGITUDE = 20
+    DEPTH = 30
+    VELOCITY_X =40
+    YAW = 50
+    BATTERY_STATE = 60
+    SBC_STATUS = 70
+
 
 
 
