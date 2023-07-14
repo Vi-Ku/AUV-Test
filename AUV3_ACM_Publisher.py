@@ -18,7 +18,7 @@ class DataID(Enum):
 # Define a class to handle the subscription and publishing
 class DataConverter:
     def __init__(self):
-        rospy.init_node('data_converter')
+        rospy.init_node('acm_communication')
 
         # Create publishers for the converted data
         self.pub = rospy.Publisher('acoustic_data', String, queue_size=10)
