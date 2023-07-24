@@ -8,3 +8,4 @@ More about PIO:
 -  [Install PlatformIO](https://medium.com/embedded-iot/platformio-every-embedded-developer-should-use-it-e9d9a51a5cc8)
 -  [Example Project](https://github.com/platformio/platformio-examples)
 -  [More Information about PlatformIO](https://docs.platformio.org/en/latest/)
+-  [Electronic Hardware in Robotics](https://maker.pro/custom/tutorial/how-to-make-a-robot-electronics-basics)
