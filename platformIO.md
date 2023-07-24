@@ -1,6 +1,6 @@
 # Development Tools for Embedded System
 
-- PlatformIO: PlatformIO is a cross-platform, cross-architecture, multiple framework, professional tool for embedded systems engineers and for software developers who write applications for embedded products.
+PlatformIO is a cross-platform, cross-architecture, multiple framework, professional tool for embedded systems engineers and for software developers who write applications for embedded products.
 More about PIO: 
 -  [What is Platform IO](https://docs.platformio.org/en/latest/what-is-platformio.html)
 -  [Tutorials in PlatformIO](https://docs.platformio.org/en/latest/tutorials/index.html)
